@@ -4,7 +4,9 @@
   "description": "Use Topdoc data on stream to generate styleguide.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "lint": "eslint .",
+    "validate": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ import PluginError from 'plugin-error';
 
 const PLUGIN_NAME = 'gulp-topdoc-generate';
 
-export default function gulpTopdocGenerate(opts) {
+export default function gulpTopdocGenerate() {
   const stream = through.obj((file, enc, cb) => {
     if (file.isStream()) {
       return cb(new PluginError(PLUGIN_NAME, 'Streaming not supported'));
